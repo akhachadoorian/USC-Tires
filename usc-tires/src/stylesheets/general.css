@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Color Variables */
+:root {
+    --primaryBlue : #0255B1;
+    --primaryBlueLighter60: #9ABBE0;
+    --primaryBlueLighter30: #4E88C8;
+    --primaryBlueDarker30: #013B7C;
+    --primaryBlueDarker60: #012247;
+
+    --primaryRed: #c30426;
+    --primaryRedLighter60: #E79BA8;
+    --primaryRedLighter30: #D54F67;
+    --primaryRedDarker30: #89031B;
+    --primaryRedDarker60: #4E020F;
+
+    --accent: #1b1b1b;
+    --primaryAccentLighter60: #A4A4A4;
+    --primaryAccentLighter30: #5F5F5F;
+    --primaryAccentDarker30: #131313;
+    --primaryAccentDarker60: #0B0B0B;
+
+    --dark: #1b1b1b;
+    --light: #f4f4f4;
+}
+
+p {
+    font-size: 18px;
+    color: var(--dark);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+h1 {
+    font-size: 3.833em;
+    color: var(--dark);
+    font-family: Roboto;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 70px */
+    letter-spacing: 3.5px;
+}
+
+h2 {
+    font-size: 3.056em;
+    color: var(--dark);
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+h3 {
+    font-size: 2.44em;
+    color: var(--dark);
+    font-family: "Roboto Condensed";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+h4 {
+    font-size: 1.944em;
+    color: var(--dark);
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 38.5px */
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.556em;
+    color: var(--dark);
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+}
+
+h6 {
+    font-size: 1.278em;
+    color: var(--dark);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 27.6px */
+    text-transform: uppercase;
+}
