@@ -1,9 +1,11 @@
 import React from "react";
 
-function Home() {
-    return (
-        <div>
+import HomePageHero from "../components/heros/HomePageHero"
 
+function Home({}) {
+    return (
+        <div className="home-page-wrapper">
+            <HomePageHero />
         </div>
     )
 }

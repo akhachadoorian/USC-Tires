@@ -1,16 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './stylesheets/general.css'
+import './stylesheets/components.css'
+import './stylesheets/heros.css'
 import Home from './pages/home'
 
 
-import './App.css';
+import './stylesheets/App.css';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <Router basename="/usc-tires">
+    <Router >
       <div>
-        {/* Add navigation here */}
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />}  />
         </Routes>
