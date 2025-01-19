@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import BluePhoneIcon from "../data/Icons/BluePhoneIcon.svg";
 import Hamburger from "../data/Icons/HamburgerIcon.svg";
 import BackArrowIcon from "../data/Icons/BackArrowIcon.svg";
-import { phoneNumber, nav, servicesNavigation } from "../data/generalData.js";
+import { contactInfo, nav, servicesNavigation } from "../data/generalData.js";
 
 import Logo from "../data/Images/USCTiresLogo.jpg";
 
@@ -34,8 +34,8 @@ function Navigation() {
           <img src={BluePhoneIcon} alt="Phone Icon" />
           <div className="callout-text">
             <p className="accent-text">Call us today!</p>
-            <a href={`tel:${phoneNumber.number}`}>
-              <span>{phoneNumber.text}</span>
+            <a href={`tel:${contactInfo[0].number}`}>
+              <span>{contactInfo[0].text}</span>
             </a>
           </div>
         </div>

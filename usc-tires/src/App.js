@@ -8,15 +8,17 @@ import Home from './pages/home'
 
 import './stylesheets/App.css';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <Router >
-      <div>
+      <div className='content-wrapper'>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />}  />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
