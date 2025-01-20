@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './stylesheets/general.css'
+import './stylesheets/pages.css'
 import './stylesheets/components.css'
 import './stylesheets/heros.css'
 import Home from './pages/home'

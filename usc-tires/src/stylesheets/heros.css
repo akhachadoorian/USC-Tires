@@ -5,7 +5,7 @@
 .home-page-hero {
     .gradient-wrapper {
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 28.5%, #1B1B1B 74%);
-        padding: 0 60px 0 94px;
+        padding: 0 60px;
         min-height: 60vh;
         border-bottom: 10px solid var(--accent) ;
 
