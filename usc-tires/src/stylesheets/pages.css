@@ -7,10 +7,51 @@
     section.about-us {
         padding: 120px 60px;
 
+        max-width: 1500px;
+        margin: auto;
+
+        .copy2-media1 {
+            margin-bottom: 60px;
+        }
+
         .multiple-vertical-cards {
-            display: flex;
-            align-items: stretch;
+            /* display: flex;
+            align-items: stretch; */
+            display: grid;
+            grid-template-columns: [s] 1fr [m1] 1fr [m2] 1fr [m3] 1fr [e];
             gap: 40px;
+
+            @media (800px <= width <= 1100px) {
+                grid-template-columns: [s] 1fr [m] 1fr [e];
+            }
+
+            @media (width <= 800px) {
+                grid-template-columns: [s] 1fr [e];
+            }
+        }
+    }
+
+    section.services {
+        padding: 120px 60px;
+
+        .double-line-header {
+            padding: 20px 0;
+            margin-bottom: 60px;
+            text-align: center;
+
+            border-top: 3px solid var(--primary-blue);
+            border-bottom: 3px solid var(--primary-blue);
+
+            h2 {
+                color: var(--primary-blue);
+            }
+        }
+
+        .multiple-horizontal-cards {
+            display: grid;
+            grid-template-columns: [s] 1fr [m] 1fr [e];
+            column-gap: 50px;
+            row-gap: 60px;
         }
     }
 }

@@ -29,20 +29,20 @@
     --card-shadow: 1px 2px 8.1px 0px rgba(0, 0, 0, 0.18);
 
     /* Font Scale */
-    --font-size-base: 1rem;
-    --font-size-6-d: 1.278rem;
-    --font-size-5-d: 1.556rem;
-    --font-size-4-d: 1.944rem;
-    --font-size-3-d: 2.444rem;
-    --font-size-2-d: 3.056rem;
-    --font-size-1-d: 3.833rem;
+    --rem: 18px;
+    --font-size-6-d: 23px;
+    --font-size-5-d: 28px;
+    --font-size-4-d: 35px;
+    --font-size-3-d: 44px;
+    --font-size-2-d: 56px;
+    --font-size-1-d: 70px;
 
-    --font-size-6-m: 1.25rem;
-    --font-size-5-m: 1.563rem;
-    --font-size-4-m: 1.938rem;
-    --font-size-3-m: 2.438rem;
-    --font-size-2-m: 3.063rem;
-    --font-size-1-m: 3.813rem;
+    --font-size-6-m: 20px;
+    --font-size-5-m: 24px;
+    --font-size-4-m: 28px;
+    --font-size-3-m: 32px;
+    --font-size-2-m: 46px;
+    --font-size-1-m: 60px;
 }
 
 @media (width <= 800px) {
@@ -61,8 +61,8 @@
   } 
 
 p, a {
-    /* font-size: 18px; */
-    font-size: clamp(16px, 1vw, 20px);
+    color: var(--dark);
+    font-size: clamp(16px, 1.25vw, 20px);
     color: var(--dark);
     font-family: Roboto;
     font-style: normal;
@@ -70,8 +70,15 @@ p, a {
     line-height: 120%;
 
     margin: 0;
+}
 
-    
+p.accent-text {
+    color: var(--dark);
+    font-family: Roboto;
+    font-size: clamp(16px, 1.25vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 a {
@@ -87,7 +94,7 @@ a {
 
 h1 {
     /* font-size: var(--font-size-1); */
-    font-size: clamp(var(--font-size-1-m), 2vw, var(--font-size-1-d));
+    font-size: clamp(var(--font-size-1-m), 10vw, var(--font-size-1-d));
     color: var(--dark);
     font-family: Roboto;
     font-style: normal;
@@ -99,7 +106,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(var(--font-size-2-m), 2vw, var(--font-size-2-d));
+    font-size: clamp(var(--font-size-2-m), 8vw, var(--font-size-2-d));
     color: var(--dark);
     font-family: Roboto;
     font-style: normal;
@@ -110,7 +117,7 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(var(--font-size-3-m), 2vw, var(--font-size-3-d));
+    font-size: clamp(var(--font-size-3-m), 7vw, var(--font-size-3-d));
     color: var(--dark);
     font-family: "Roboto Condensed";
     font-size: 44px;
@@ -122,7 +129,7 @@ h3 {
 }
 
 h4 {
-    font-size: clamp(var(--font-size-4-m), 2vw, var(--font-size-4-d));
+    font-size: clamp(var(--font-size-4-m), 2.5vw, var(--font-size-4-d));
     color: var(--dark);
     font-family: "Roboto Condensed";
     font-style: normal;
@@ -134,7 +141,7 @@ h4 {
 }
 
 h5 {
-    font-size: clamp(var(--font-size-5-m), 2vw, var(--font-size-5-d));
+    font-size: clamp(var(--font-size-5-m), 5vw, var(--font-size-5-d));
     color: var(--dark);
     font-family: "Roboto Condensed";
     font-style: normal;
@@ -145,7 +152,7 @@ h5 {
 }
 
 h6 {
-    font-size: clamp(var(--font-size-6-m), 2vw, var(--font-size-6-d));
+    font-size: clamp(var(--font-size-6-m), 4vw, var(--font-size-6-d));
     color: var(--dark);
     font-family: Roboto;
     font-style: normal;

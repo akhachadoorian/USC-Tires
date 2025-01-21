@@ -5,7 +5,9 @@ import Copy2Media1 from "../components/Copy2Media1.jsx";
 import VerticalCard from "../components/VerticalCard.jsx";
 
 import { company } from "../data/generalData.js"
-import { hero, aboutUs } from "../data/homepage.js"
+import { hero, aboutUs, services } from "../data/homepage.js"
+import HorizontalCards from "../components/HorizontalCards.jsx";
+import Spacer from "../components/Spacer.jsx";
 
 function Home({}) {
     return (
@@ -43,8 +45,30 @@ function Home({}) {
                     ))}
                 </div>
             </section>
+
             {/* Services */}
+            <section className="services">
+                <div className="double-line-header">
+                    <h2>{services.header}</h2>
+                </div>
+                <div className="multiple-horizontal-cards">
+                    {services.services.map((s, key) =>(
+                        <HorizontalCards 
+                            key={`${s.header}-${key}`}
+                            color={"blue"}
+                            icon={s.icon}
+                            iconAltText={s.iconAltText}
+                            header={s.title}
+                            bodyText={s.bodyText}
+                            link={s.link}
+                        />
+                    ))}
+                </div>
+            </section>
+
+            <Spacer />
             {/* Testimonials */}
+
             {/* Contact */}
         </div>
     )

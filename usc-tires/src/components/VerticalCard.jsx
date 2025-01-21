@@ -11,6 +11,7 @@ function VerticalCard({ color, icon, iconAltText, header, bodyText }) {
 
             {/* Text */}
             <h4>{header}</h4>
+            <p>{bodyText}</p>
         </div>
     )
 }
