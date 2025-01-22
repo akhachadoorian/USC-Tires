@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import Logo from "../data/Images/USCTiresLogo.jpg";
-import RedNavArrow from "../data/Icons/RedNavArrow.svg";
-import RedClock from "../data/Icons/RedClock.svg";
-import RedPhone from "../data/Icons/RedPhone.svg";
-import RedEnvelope from "../data/Icons/RedEnvelope.svg";
 
 import WhiteIconText from "./WhiteIconText";
 import { contactInfo } from "../data/generalData.js";
@@ -25,33 +21,31 @@ function Footer() {
         </div>
         {/* Contact Us */}
         <div className="contact-us-opts">
-          <WhiteIconText
-            icon={RedNavArrow}
-            iconAltText={"Red Navigation Arrow Icon"}
-            textLine1={contactInfo[2].address1}
-            textLine2={contactInfo[2].address2}
-            type={contactInfo[2].type}
+          <WhiteIconText 
+            icon={contactInfo.location.iconRed}
+            iconAltText={contactInfo.location.iconAltText}
+            type={contactInfo.location.type}
+            bodyText={contactInfo.location.text}
           />
-          <WhiteIconText
-            icon={RedClock}
-            iconAltText={"Red Clock Icon"}
-            textLine1={contactInfo[3].line1}
-            textLine2={contactInfo[3].line2}
-            type={contactInfo[3].type}
+          <WhiteIconText 
+            icon={contactInfo.hours.iconRed}
+            iconAltText={contactInfo.hours.iconAltText}
+            type={contactInfo.hours.type}
+            bodyText={contactInfo.hours.text}
           />
-          <WhiteIconText
-            icon={RedPhone}
-            iconAltText={"Red Phone Icon"}
-            textLine1={contactInfo[0].text}
-            link={contactInfo[0].number}
-            type={contactInfo[0].type}
+          <WhiteIconText 
+            icon={contactInfo.phone.iconRed}
+            iconAltText={contactInfo.phone.iconAltText}
+            type={contactInfo.phone.type}
+            bodyText={contactInfo.phone.text}
+            link={contactInfo.phone.link}
           />
-          <WhiteIconText
-            icon={RedEnvelope}
-            iconAltText={"Red Envelope Icon"}
-            textLine1={contactInfo[1].email}
-            link={contactInfo[1].email}
-            type={contactInfo[1].type}
+          <WhiteIconText 
+            icon={contactInfo.email.iconRed}
+            iconAltText={contactInfo.email.iconAltText}
+            type={contactInfo.email.type}
+            bodyText={contactInfo.email.text}
+            link={contactInfo.email.link}
           />
         </div>
       </div>

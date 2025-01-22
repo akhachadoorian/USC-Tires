@@ -1,6 +1,6 @@
 import React from "react";
 
-function WhiteIconText({ icon, iconAltText, textLine1, textLine2, type, link }) {
+function WhiteIconText({ icon, iconAltText, bodyText, type, link }) {
 
 
   return (
@@ -10,20 +10,13 @@ function WhiteIconText({ icon, iconAltText, textLine1, textLine2, type, link }) 
       </div>
 
       <div className="text">
-        { type === "phone" ?
-            <a href={`tel:${link}`}>{textLine1}</a>
-        :
-        type === "email" ?
-            <a href={`mailto:${link}`}>{textLine1}</a>
-            :
-            <>
-                <p>{textLine1}</p>
-                {textLine2 && <p>{textLine2}</p>}
-            </>
-            
+        {link ? 
+          <a href={link} >
+            <p dangerouslySetInnerHTML={{ __html: bodyText }}></p>
+          </a>
+          :
+          <p dangerouslySetInnerHTML={{ __html: bodyText }}></p>
         }
-
-        
       </div>
     </div>
   );

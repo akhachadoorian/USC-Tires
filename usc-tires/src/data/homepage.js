@@ -12,6 +12,12 @@ import TempIcon from "../data/Icons/TempIcon.svg";
 import TuneUpIcon from "../data/Icons/TuneUpIcon.svg";
 import WheelIcon from "../data/Icons/WheelIcon.svg";
 import WrenchIcon from "../data/Icons/WrenchIcon.svg";
+import Building from "../data/Images/USCTiresBuilding.jpg"
+import MessageBubbleIcon from "../data/Icons/MessageBubbleIcon.svg";
+import WhiteClock from "../data/Icons/WhiteClock.svg";
+import WhiteEnvelope from "../data/Icons/WhiteEnvelope.svg";
+import WhiteNavArrow from "../data/Icons/WhiteNavArrow.svg";
+import WhitePhone from "../data/Icons/WhitePhone.svg";
 
 export const hero = {
   img: TireImage,
@@ -23,7 +29,7 @@ export const aboutUs = {
     "USC Tires is a family-owned, locally-operated business rooted in over 50 years of experience, dedicated to exceptional service, personal connections, and keeping our community safely on the road.",
   buttonText: "Learn More",
   buttonURL: "",
-  img: ManWorkOnCar,
+  img: Building,
   values: [
     {
       icon: LocationNode,
@@ -114,3 +120,61 @@ export const services = {
     },
   ],
 };
+
+export const testimonials = {
+  header: 'What Our Customers Say',
+  bodyText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+  slider: [
+    {
+      image: '',
+      name: 'Crystal Jordan',
+      title: '',
+      review: 'Fantastic service! Dropped my car off and they had it ready in less than 2 hours. Great prices and they are super friendly there. They made sure I understood everything they were going to do before they did it. I will definitely be using them again!'
+    },
+    {
+      image: '',
+      name: 'Alice McRae',
+      title: '',
+      review: 'Great place for tires, oil changes, etc. Great place  clean, nice waiting area, complementary coffee ,Internet access, large TV. Everyone is friendly.'
+    },
+    {
+      image: '',
+      name: 'Boone Givens',
+      title: 'Google Review',
+      review: '5 star service receiving my new tires!'
+    },
+    {
+      image: '',
+      name: 'Laurie Caminas Gilchrist',
+      title: 'Facebook Review',
+      review: 'Kind professional staff. Very quick to get started on my issue. Can’t thank them enough. I will definitely be going back!!!'
+    },
+  ]
+};
+
+export const contact = {
+  header: 'Get in Touch',
+  bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  // methods: [
+  //   {
+  //     icon: '',
+  //     iconAltText: ''
+  //   },
+  //   {
+  //     icon: '',
+  //     iconAltText: ''
+  //   },
+  //   {
+  //     icon: '',
+  //     iconAltText: ''
+  //   },
+  //   {
+  //     icon: '',
+  //     iconAltText: ''
+  //   },
+  //   {
+  //     icon: '',
+  //     iconAltText: ''
+  //   },
+  // ]
+}

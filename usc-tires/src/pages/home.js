@@ -4,10 +4,12 @@ import HomePageHero from "../components/heros/HomePageHero"
 import Copy2Media1 from "../components/Copy2Media1.jsx";
 import VerticalCard from "../components/VerticalCard.jsx";
 
-import { company } from "../data/generalData.js"
-import { hero, aboutUs, services } from "../data/homepage.js"
+import { company, contactInfo, contactInfo2 } from "../data/generalData.js"
+import { hero, aboutUs, services, testimonials, contact } from "../data/homepage.js"
 import HorizontalCards from "../components/HorizontalCards.jsx";
 import Spacer from "../components/Spacer.jsx";
+import TestimonialSlider from "../components/slider/TestimonialSlider.jsx";
+import ClearCards from "../components/ClearCards.jsx";
 
 function Home({}) {
     return (
@@ -67,9 +69,29 @@ function Home({}) {
             </section>
 
             <Spacer />
+
             {/* Testimonials */}
+            <section className="testimonials">
+                <TestimonialSlider data={testimonials.slider} />
+                <div className="text">
+                    <h2>{testimonials.header}</h2>
+                    <p>{testimonials.bodyText}</p>
+                </div>
+            </section>
 
             {/* Contact */}
+            <section className="contact">
+                <div className="header-text">
+                    <h2>{contact.header}</h2>
+                    <p>{contact.bodyText}</p>
+                </div>
+                <div className="">
+                    <ClearCards 
+                        color={'blue'}
+                        
+                    />
+                </div>
+            </section>
         </div>
     )
 }

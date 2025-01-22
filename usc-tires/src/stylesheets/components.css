@@ -719,7 +719,7 @@ footer {
 
 
 /* ///////////////// */
-/* Horizontal Card */
+/* Spacer */
 /* ///////////////// */
 
 .spacer {
@@ -732,3 +732,91 @@ footer {
 }
 
 /* ///////////////// */
+
+
+/* ///////////////// */
+/* Testimonial Slider & Buttons */
+/* ///////////////// */
+
+.testimonial-slider {
+  /* height: fit-content; */
+  flex: 1 1 646px;
+  height: 600px;
+
+  .swiper-vertical {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .slider-btns {
+      flex: 0 0 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .slide {
+      &.red {
+        background-color: var(--primary-red);
+      }
+
+      &.blue {
+        background-color: var(--primary-blue);
+      }
+
+      border: 2px solid var(--light);
+      box-shadow: var(--card-shadow);
+      padding: 25px 40px;
+      height: calc(100% - 60px);
+
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .text {
+        h5, p {
+          color: var(--light);
+        }
+      }
+
+      .quote {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+.next-btn {
+  border-radius: 100px;
+  background-color: var(--accent-darker-60);
+  box-shadow: 2px 2px 0px 0px var(--primary-blue);
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+.prev-btn {
+  border-radius: 100px;
+  background-color: var(--accent-darker-60);
+  box-shadow: 2px 2px 0px 0px var(--primary-red);
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    transform: rotate(-90deg);
+  }
+}
+
+/* ///////////////// */
+

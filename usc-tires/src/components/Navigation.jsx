@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import BluePhoneIcon from "../data/Icons/BluePhoneIcon.svg";
 import Hamburger from "../data/Icons/HamburgerIcon.svg";
 import BackArrowIcon from "../data/Icons/BackArrowIcon.svg";
 import { contactInfo, nav, servicesNavigation } from "../data/generalData.js";
@@ -31,11 +30,11 @@ function Navigation() {
       <div className="head">
         {/* Call to Action */}
         <div className="phone-callout">
-          <img src={BluePhoneIcon} alt="Phone Icon" />
+          <img src={contactInfo.phone.iconBlue} alt={contactInfo.phone.iconAltText} />
           <div className="callout-text">
             <p className="accent-text">Call us today!</p>
-            <a href={`tel:${contactInfo[0].number}`}>
-              <span>{contactInfo[0].text}</span>
+            <a href={contactInfo.phone.link}>
+              <p dangerouslySetInnerHTML={{ __html: contactInfo.phone.text }}></p>
             </a>
           </div>
         </div>

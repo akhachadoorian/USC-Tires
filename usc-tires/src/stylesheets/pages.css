@@ -7,7 +7,7 @@
     section.about-us {
         padding: 120px 60px;
 
-        max-width: 1500px;
+        /* max-width: 1500px; */
         margin: auto;
 
         .copy2-media1 {
@@ -54,6 +54,47 @@
             row-gap: 60px;
         }
     }
+
+    section.testimonials {
+        padding: 120px 60px;
+
+        display: flex;
+        align-items: center;
+        gap: 10vw;
+
+        .text {
+            padding: 20px 0;
+            
+            flex: 1 1 530px;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    section.contact {
+        padding: 120px 60px;
+        background-color: var(--primary-blue);
+        border-top: 5px solid var(--accent);
+
+        .header-text {
+            max-width: 60.42vw;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--light);
+
+            h2 {
+                color: var(--light);
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: var(--light);
+            }
+        }
+    }
+
+
 }
 
 /* ///////////////// */
