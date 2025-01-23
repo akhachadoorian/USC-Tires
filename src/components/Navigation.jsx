@@ -22,6 +22,7 @@ function useDeviceDetection() {
   return isMobile;
 }
 
+
 function Navigation() {
   const isMobile = useDeviceDetection();
 
