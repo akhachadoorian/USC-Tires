@@ -2,6 +2,7 @@
   "name": "usc-tires",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akhachadoorian.github.io/USC-Tires/",
   "dependencies": {
     "cra-template": "1.2.0",
     "primereact": "^10.9.1",
