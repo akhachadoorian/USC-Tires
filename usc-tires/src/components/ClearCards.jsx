@@ -5,8 +5,7 @@ function ClearCards({
   icon,
   iconAltText,
   header,
-  bodyText1,
-  bodyText2,
+  bodyText,
   link,
 }) {
   return (
@@ -19,14 +18,10 @@ function ClearCards({
         <h4>{header}</h4>
         {link ? (
           <a href={link}>
-            <p>{bodyText1}</p>
-            <p>{bodyText2}</p>
+            <p dangerouslySetInnerHTML={{ __html: bodyText }}></p>
           </a>
         ) : (
-          <>
-            <p>{bodyText1}</p>
-            <p>{bodyText2}</p>
-          </>
+            <p dangerouslySetInnerHTML={{ __html: bodyText }}></p>
         )}
       </div>
     </div>

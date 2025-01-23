@@ -22,7 +22,7 @@ export const contactInfo = {
     link: "tel:251-384-8473",
     iconRed: RedPhone,
     iconBlue: BluePhoneIcon,
-    iconWhite: "",
+    iconWhite: WhitePhone,
     iconAltText: "Phone icon",
   },
   email: {
@@ -31,7 +31,7 @@ export const contactInfo = {
     link: "mailto:test@gmail.com",
     iconRed: RedEnvelope,
     iconBlue: "",
-    iconWhite: "",
+    iconWhite: WhiteEnvelope,
     iconAltText: "Envelope icon",
   },
   location: {
@@ -58,8 +58,8 @@ export const contactInfo = {
     link: "",
     iconRed: "",
     iconBlue: "",
-    iconWhite: "",
-    iconAltText: "",
+    iconWhite: WhiteMessageBubble,
+    iconAltText: "Message bubble icon",
   },
 };
 

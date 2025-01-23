@@ -13,11 +13,6 @@ import TuneUpIcon from "../data/Icons/TuneUpIcon.svg";
 import WheelIcon from "../data/Icons/WheelIcon.svg";
 import WrenchIcon from "../data/Icons/WrenchIcon.svg";
 import Building from "../data/Images/USCTiresBuilding.jpg"
-import MessageBubbleIcon from "../data/Icons/MessageBubbleIcon.svg";
-import WhiteClock from "../data/Icons/WhiteClock.svg";
-import WhiteEnvelope from "../data/Icons/WhiteEnvelope.svg";
-import WhiteNavArrow from "../data/Icons/WhiteNavArrow.svg";
-import WhitePhone from "../data/Icons/WhitePhone.svg";
 
 export const hero = {
   img: TireImage,

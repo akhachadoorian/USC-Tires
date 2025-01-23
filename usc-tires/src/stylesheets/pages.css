@@ -10,8 +10,16 @@
         /* max-width: 1500px; */
         margin: auto;
 
+        @media (width <= 800px) {
+            padding: 60px 16px;;
+        }
+
         .copy2-media1 {
             margin-bottom: 60px;
+
+            @media (width: 800px) {
+                margin-bottom: 30px;
+            }
         }
 
         .multiple-vertical-cards {
@@ -34,6 +42,10 @@
     section.services {
         padding: 120px 60px;
 
+        @media (width <= 800px) {
+            padding: 60px 16px;;
+        }
+
         .double-line-header {
             padding: 20px 0;
             margin-bottom: 60px;
@@ -52,6 +64,11 @@
             grid-template-columns: [s] 1fr [m] 1fr [e];
             column-gap: 50px;
             row-gap: 60px;
+
+            @media (width <= 800px) {
+                grid-template-columns: [s] 1fr [e];
+                row-gap: 40px;
+            }
         }
     }
 
@@ -62,10 +79,26 @@
         align-items: center;
         gap: 10vw;
 
+        @media (width <= 800px) {
+            padding: 60px 16px;
+            flex-direction: column;
+        }
+
+        .testimonial-slider {
+            @media (width <= 800px) {
+                order: 2;
+            }
+        }
+
         .text {
             padding: 20px 0;
             
             flex: 1 1 530px;
+
+            @media (width <= 800px) {
+                order: 1;
+                flex: 1;
+            }
 
             h2 {
                 margin-bottom: 20px;
@@ -78,10 +111,19 @@
         background-color: var(--primary-blue);
         border-top: 5px solid var(--accent);
 
+        @media (width <= 800px) {
+            padding: 60px 16px;
+        }
+
         .header-text {
             max-width: 60.42vw;
             padding-bottom: 20px;
             border-bottom: 3px solid var(--light);
+            margin-bottom: 40px;
+
+            @media (width <= 800px) {
+                max-width: none;
+            }
 
             h2 {
                 color: var(--light);
@@ -90,6 +132,21 @@
 
             p {
                 color: var(--light);
+            }
+        }
+
+        .multiple-clear-cards {
+            display: flex;
+            gap: 30px;
+
+            margin-bottom: 40px;
+
+            @media (width <= 800px) {
+                flex-direction: column;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
             }
         }
     }

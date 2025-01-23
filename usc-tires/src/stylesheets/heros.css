@@ -3,6 +3,12 @@
 /* ///////////////// */
 
 .home-page-hero {
+
+    @media (width <= 800px) {
+        background-position: center !important;
+    }
+
+
     .gradient-wrapper {
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 28.5%, #1B1B1B 74%);
         padding: 0 60px;
@@ -13,8 +19,18 @@
         align-items: center;
         gap: 5vw;
         
+        @media (width <= 800px) {
+            padding: 16px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 30.5%, rgba(0, 0, 0, 0.95) 75%);
+            align-items: flex-end;
+        }
+
         .hero-text {
             max-width: 33.27vw;
+
+            @media (width <= 800px) {
+                max-width: none;
+            }
 
             h1 {
                 color: var(--light);

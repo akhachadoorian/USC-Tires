@@ -4,7 +4,7 @@ import HomePageHero from "../components/heros/HomePageHero"
 import Copy2Media1 from "../components/Copy2Media1.jsx";
 import VerticalCard from "../components/VerticalCard.jsx";
 
-import { company, contactInfo, contactInfo2 } from "../data/generalData.js"
+import { company, contactInfo } from "../data/generalData.js"
 import { hero, aboutUs, services, testimonials, contact } from "../data/homepage.js"
 import HorizontalCards from "../components/HorizontalCards.jsx";
 import Spacer from "../components/Spacer.jsx";
@@ -85,10 +85,38 @@ function Home({}) {
                     <h2>{contact.header}</h2>
                     <p>{contact.bodyText}</p>
                 </div>
-                <div className="">
+                <div className="multiple-clear-cards">
                     <ClearCards 
                         color={'blue'}
-                        
+                        icon={contactInfo.location.iconWhite}
+                        iconAltText={contactInfo.location.iconAltText}
+                        header={contactInfo.location.type}
+                        bodyText={contactInfo.location.text}
+                    />
+                    <ClearCards 
+                        color={'blue'}
+                        icon={contactInfo.hours.iconWhite}
+                        iconAltText={contactInfo.hours.iconAltText}
+                        header={contactInfo.hours.type}
+                        bodyText={contactInfo.hours.text}
+                    />
+                </div>
+                <div className="multiple-clear-cards">
+                    <ClearCards 
+                        color={'blue'}
+                        icon={contactInfo.phone.iconWhite}
+                        iconAltText={contactInfo.phone.iconAltText}
+                        header={contactInfo.phone.type}
+                        bodyText={contactInfo.phone.text}
+                        link={contactInfo.phone.link}
+                    />
+                    <ClearCards 
+                        color={'blue'}
+                        icon={contactInfo.email.iconWhite}
+                        iconAltText={contactInfo.email.iconAltText}
+                        header={contactInfo.email.type}
+                        bodyText={contactInfo.email.text}
+                        link={contactInfo.email.link}
                     />
                 </div>
             </section>

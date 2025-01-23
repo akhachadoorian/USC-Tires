@@ -1,24 +1,38 @@
-import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import React, { useState, useEffect }from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation";
 import SlideNextButton from "./SliderNextBtn";
 import SlidePrevButton from "./SliderPrevBtn";
 import Slide from "./Slide";
 
+function useDeviceDetection() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 800);
+  };
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 800);
+    handleResize(); // Trigger on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isMobile;
+}
+
 function TestimonialSlider({ data }) {
+  const isMobile = useDeviceDetection();
+
   return (
     <div className="testimonial-slider">
       <Swiper
-        spaceBetween={30}
-        slidesPerView={2}
+        spaceBetween={10}
+        slidesPerView={isMobile ? 1 : 2}
         slidesPerGroup={1} 
-        direction="vertical"
+        direction={isMobile ? "horizontal" : "vertical"}
         loop = {true}
-        style={{
-          height: "550px",
-        }}
       >
         {data.map((d, key) => (
           <SwiperSlide key={key}>
