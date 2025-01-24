@@ -20,9 +20,19 @@
         gap: 5vw;
         
         @media (width <= 800px) {
-            padding: 16px;
+            padding: 60px 16px;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 30.5%, rgba(0, 0, 0, 0.95) 75%);
-            align-items: flex-end;
+
+            /* align-items: flex-end; */
+            justify-content: flex-end;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .dashes {
+            @media (width <= 800px) {
+                order: 2;
+            }
         }
 
         .hero-text {
@@ -30,6 +40,7 @@
 
             @media (width <= 800px) {
                 max-width: none;
+                order: 1;
             }
 
             h1 {
