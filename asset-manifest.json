@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/USC-Tires/static/css/main.71dc43c3.css",
-    "main.js": "/USC-Tires/static/js/main.bc05b51e.js",
+    "main.css": "/USC-Tires/static/css/main.1206adeb.css",
+    "main.js": "/USC-Tires/static/js/main.23093355.js",
     "static/js/488.a3bf0f3d.chunk.js": "/USC-Tires/static/js/488.a3bf0f3d.chunk.js",
     "static/media/USCTiresLogo.jpg": "/USC-Tires/static/media/USCTiresLogo.a8d375b71f240de3d4db.jpg",
     "static/media/ManWorkingOnCar.png": "/USC-Tires/static/media/ManWorkingOnCar.32a693c40e144af660b9.png",
@@ -35,12 +35,12 @@
     "static/media/AlignmentIcon.svg": "/USC-Tires/static/media/AlignmentIcon.da784b79ba5e9484a653f5704d63a737.svg",
     "static/media/arrow-right-solid.svg": "/USC-Tires/static/media/arrow-right-solid.ea3bb2b597b72063c48c66181f109cfb.svg",
     "static/media/BackArrowIcon.svg": "/USC-Tires/static/media/BackArrowIcon.8ca2c49c6cf62b8cba302cc714b19d93.svg",
-    "main.71dc43c3.css.map": "/USC-Tires/static/css/main.71dc43c3.css.map",
-    "main.bc05b51e.js.map": "/USC-Tires/static/js/main.bc05b51e.js.map",
+    "main.1206adeb.css.map": "/USC-Tires/static/css/main.1206adeb.css.map",
+    "main.23093355.js.map": "/USC-Tires/static/js/main.23093355.js.map",
     "488.a3bf0f3d.chunk.js.map": "/USC-Tires/static/js/488.a3bf0f3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71dc43c3.css",
-    "static/js/main.bc05b51e.js"
+    "static/css/main.1206adeb.css",
+    "static/js/main.23093355.js"
   ]
 }
