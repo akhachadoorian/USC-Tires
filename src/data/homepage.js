@@ -30,26 +30,25 @@ export const aboutUs = {
       icon: LocationNode,
       iconAltText: "Map location icon",
       header: "Local Expertise",
-      bodyText: "We're Mobile natives who understand your needs.",
+      bodyText: "As Mobile natives, we understand the unique needs of our community and are proud to provide tailored solutions for your automotive needs.",
     },
     {
       icon: AwardIcon,
       iconAltText: "Award ribbon with a check in it icon  ",
       header: "Decades of Experience",
-      bodyText: "Building on 50+ years of industry knowledge.",
+      bodyText: "Building on over 50 years of expertise, we offer trusted, high-quality service for every vehicle we work on.",
     },
     {
       icon: GroupIcon,
       iconAltText: "Group of people icon",
       header: "Family-Owned Values",
-      bodyText: "We treat every customer like part of our family.",
+      bodyText: "We’re more than just a business—we’re a family dedicated to treating every customer with care, respect, and personalized service.",
     },
     {
       icon: ServeIcon,
       iconAltText: "Hand serving dish icon",
       header: "Customer-Focused Care",
-      bodyText:
-        "We strive to put the customer first, providing tailored solutions and attentive service.",
+      bodyText: "Your safety is our top priority. We’re here to understand your needs, offer reliable solutions, and ensure you drive with confidence.",
     },
   ],
 };

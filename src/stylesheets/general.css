@@ -69,7 +69,7 @@
 
 p, a {
     color: var(--dark);
-    font-size: clamp(16px, 1.7vw, 22px);
+    font-size: clamp(16px, 1.7vw, 20px);
     color: var(--dark);
     font-family: Roboto;
     font-style: normal;
@@ -82,7 +82,7 @@ p, a {
 p.accent-text {
     color: var(--dark);
     font-family: Roboto;
-    font-size: clamp(16px, 1.389vw, 22px);
+    font-size: clamp(16px, 1.389vw, 20px);
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
