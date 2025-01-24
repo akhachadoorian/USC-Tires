@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <Router >
+    <Router basename='USC-Tires'>
       <div className='content-wrapper'>
         <Navigation />
         <Routes>
