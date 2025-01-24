@@ -21,7 +21,7 @@ export const hero = {
 export const aboutUs = {
   header: "About Us",
   bodyText:
-    "USC Tires is a family-owned, locally-operated business rooted in over 50 years of experience, dedicated to exceptional service, personal connections, and keeping our community safely on the road.",
+    "USC Tires & Service is a family-owned and locally operated business with over 50 years of experience. We’re dedicated to delivering exceptional service, building personal connections, and ensuring our community’s safety on the road. From reliable tire services to expert auto care, we treat every customer like family.",
   buttonText: "Learn More",
   buttonURL: "",
   img: Building,
@@ -60,56 +60,56 @@ export const services = {
       icon: WheelIcon,
       iconAltText: "Icon of a tire",
       title: "Tires",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Discover our wide range of high-quality tires for every vehicle type, expertly installed for maximum safety and performance.",
       link: "",
     },
     {
       icon: CautionIcon,
       iconAltText: "Icon of a caution symbol",
       title: "Brakes",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Keep your brakes in top condition with our expert maintenance, repair, and replacement services.",
       link: "",
     },
     {
       icon: AlignmentIcon,
       iconAltText: "Icon of the text alignment symbol",
       title: "Alignment",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Improve your vehicle's handling and reduce tire wear with precise alignment services.",
       link: "",
     },
     {
       icon: TempIcon,
       iconAltText: "Icon of a thermometer",
       title: "A/C & Heating",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Stay comfortable year-round with our comprehensive air conditioning and heating system services.",
       link: "",
     },
     {
       icon: OilIcon,
       iconAltText: "Icon of an oil can",
       title: "Oil Change",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Protect your engine with regular oil changes using top-grade oils and filters.",
       link: "",
     },
     {
       icon: TuneUpIcon,
       iconAltText: "Icon of car with caution symbol",
       title: "Tune Up",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Ensure your vehicle runs efficiently with our complete tune-up services tailored to your needs.",
       link: "",
     },
     {
       icon: WrenchIcon,
       iconAltText: "Icon of a wrench",
       title: "Leveling Kits",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "From improved handling to a balanced look, our leveling kits are designed to elevate your vehicle's performance and style.",
       link: "",
     },
     {
       icon: BounceIcon,
       iconAltText: "Icon of a ball bouncing",
       title: "Suspension",
-      bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      bodyText: "Improve your ride quality and vehicle stability with our expert suspension services.",
       link: "",
     },
   ],
@@ -117,7 +117,7 @@ export const services = {
 
 export const testimonials = {
   header: 'What Our Customers Say',
-  bodyText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+  bodyText: 'Customer satisfaction drives everything we do at USC Tires & Service. We take pride in going the extra mile to ensure every visit leaves a positive impression. Hear directly from those we’ve had the pleasure of serving.',
   slider: [
     {
       image: '',
@@ -148,27 +148,5 @@ export const testimonials = {
 
 export const contact = {
   header: 'Get in Touch',
-  bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  // methods: [
-  //   {
-  //     icon: '',
-  //     iconAltText: ''
-  //   },
-  //   {
-  //     icon: '',
-  //     iconAltText: ''
-  //   },
-  //   {
-  //     icon: '',
-  //     iconAltText: ''
-  //   },
-  //   {
-  //     icon: '',
-  //     iconAltText: ''
-  //   },
-  //   {
-  //     icon: '',
-  //     iconAltText: ''
-  //   },
-  // ]
+  bodyText: "Have a question or need to schedule a service? We’re here to help. Reach out to us through the details below, and our team will get back to you promptly.",
 }
