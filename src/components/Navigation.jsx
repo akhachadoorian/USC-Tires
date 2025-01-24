@@ -53,8 +53,6 @@ function Navigation() {
         </div>
       </div>
 
-      <div className="temp-nav-line"></div>
-
       {/* {isMobile ? (
         <div className="mobile-nav">
           <div className="back-arrow">

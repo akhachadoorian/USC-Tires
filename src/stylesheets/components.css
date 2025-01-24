@@ -6,6 +6,12 @@ header.navigation {
   background-color: var(--primary-red);
   position: relative;
 
+  border-bottom: 68px solid var(--accent-darker-60);
+
+  @media (width <= 800px) {
+    border-bottom: 35px solid var(--accent-darker-60);
+  }
+
   .head {
     padding: 55px 37px 0 37px;
 
@@ -73,6 +79,12 @@ header.navigation {
     align-items: center;
     gap: 26px;
 
+    margin-bottom: -30px;
+
+    @media (width <= 800px) {
+      margin-bottom: -15px;
+    }
+
     .logo {
       max-width: 12vw;
       max-height: 12vw;
@@ -121,16 +133,6 @@ header.navigation {
     }
   }
 
-  .temp-nav-line {
-    height: 68px;
-    background-color: var(--accent-darker-60);
-    margin-top: -40px;
-
-    @media (width <= 800px) {
-      height: 25px;
-      margin-top: -10px;
-    }
-  }
 
   nav.desktop {
     min-height: 68px; /* Fix me */
